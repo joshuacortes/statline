@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StatLine Vascular Access</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* HEADER */
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+  }
+
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* LOGO */
+  .logo img {
+    height: 36px;
+  }
+
+  /* NAV LINKS */
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+.cta-btn {
+  background: #fff;
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #000;
+  transition: all 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+  /* MOBILE MENU */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+
+  .hamburger span {
+    width: 22px;
+    height: 2px;
+    background: #000;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  .mobile-menu a {
+    padding: 14px 0;
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .mobile-cta {
+    margin-top: 15px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="nav">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="https://i.postimg.cc/QdpctNzQ/statline-logo.jpg" alt="StatLine Logo">
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <div class="nav-links">
+      <a href="/picc-line">PICC Lines</a>
+      <a href="/midlines">Midlines</a>
+      <a href="/peripheral-iv">Peripheral IV</a>
+      <a href="/about">About</a>
+      <a href="/book" class="cta-btn">Book Now</a>
+    </div>
+
+    <!-- MOBILE -->
+    <div style="display:flex; align-items:center; gap:12px;">
+      <a href="#" class="cta-btn" style="display:none;" id="mobileCTA">Book</a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">PICC Lines</a>
+    <a href="#">Midlines</a>
+    <a href="#">Peripheral IV</a>
+    <a href="#">About</a>
+    <a href="#" class="mobile-cta">Book Now</a>
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  }
+
+  // Show CTA next to hamburger on mobile
+  function handleResize() {
+    const cta = document.getElementById("mobileCTA");
+    if (window.innerWidth <= 768) {
+      cta.style.display = "inline-block";
+    } else {
+      cta.style.display = "none";
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+  window.addEventListener("load", handleResize);
+</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- PERIPHERAL IV PAGE BODY -->
+
+<!-- HERO SECTION -->
+<section style="width:100%;position:relative;height:250px;display:flex;align-items:center;justify-content:center;background:url('https://images.unsplash.com/photo-1588776814546-9c3cbe2b08ff?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;">
+  <!-- Overlay -->
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.35);backdrop-filter:blur(2px);"></div>
+
+  <!-- Hero Text -->
+  <div style="position:relative;text-align:center;color:#fff;max-width:900px;padding:0 20px;">
+    <h2 style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:28px;font-weight:700;margin:0;">
+      Peripheral IV Services
+    </h2>
+    <p style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:16px;margin-top:10px;">
+      Expert IV insertion and management for healthcare facilities, improving patient outcomes with safe and effective vascular access.
+    </p>
+  </div>
+</section>
+
+<!-- EDUCATIONAL INFORMATION -->
+<section style="width:100%;background:#f9f9f9;padding:60px 20px;box-sizing:border-box;">
+  <div style="max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:30px;">
+    
+    <!-- INFO / EDUCATIONAL -->
+    <div style="max-width:800px;">
+      <p style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:15px;color:#555;line-height:1.6;">
+        Peripheral IVs are **short-term vascular access devices** inserted into superficial veins, typically in the hands or arms. They are used for **fluids, medications, and blood draws**, providing essential access for patient care in hospitals, outpatient centers, and clinics.
+      </p>
+      <p style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:15px;color:#555;line-height:1.6;margin-top:15px;">
+        Proper placement, maintenance, and monitoring are critical to **minimize complications** such as infiltration, phlebitis, or infection. Our licensed vascular access team follows strict protocols to ensure patient safety and regulatory compliance.
+      </p>
+    </div>
+
+    <!-- CTA FORM -->
+    <div style="width:100%;max-width:700px;background:#fff;padding:30px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/aAuPVNwuP5w9LHBIjJqq"
+        style="width:100%;height:600px;border:none;border-radius:3px"
+        id="inline-aAuPVNwuP5w9LHBIjJqq" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Statline.us"
+        data-height="undefined"
+        data-layout-iframe-id="inline-aAuPVNwuP5w9LHBIjJqq"
+        data-form-id="aAuPVNwuP5w9LHBIjJqq"
+        title="Statline.us">
+      </iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    </div>
+
+    <!-- EXTENDED EDUCATIONAL INFO -->
+    <div style="max-width:800px;text-align:left;margin-top:30px;">
+      <h3 style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:20px;font-weight:600;color:#111;margin-bottom:10px;">
+        Understanding Peripheral IV Care
+      </h3>
+      <p style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:15px;color:#555;line-height:1.6;">
+        Peripheral IV therapy is not just about insertion; proper maintenance is key to patient safety. This includes:
+      </p>
+      <ul style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:15px;color:#555;line-height:1.6;padding-left:20px;margin-top:10px;">
+        <li>Regular monitoring for infiltration, phlebitis, and infection</li>
+        <li>Proper dressing changes and aseptic technique</li>
+        <li>Safe administration of fluids and medications</li>
+        <li>Timely removal and replacement when clinically indicated</li>
+      </ul>
+      <p style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;font-size:15px;color:#555;line-height:1.6;margin-top:15px;">
+        Our team educates facility staff on best practices and ensures **documentation and compliance** with all healthcare regulations. Partner with us to improve patient outcomes and streamline vascular access care.
+      </p>
+    </div>
+
+  </div>
+</section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+  
+  
+  
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <!-- COLUMN 1: LOGO + TAGLINE -->
+    <div class="footer-col footer-logo">
+      <img src="https://i.postimg.cc/QdpctNzQ/statline-logo.jpg" alt="StatLine Logo">
+      <p class="footer-tagline">
+        On-demand vascular access services for healthcare facilities.
+      </p>
+    </div>
+
+    <!-- COLUMN 2: SERVICES -->
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#">PICC Lines</a>
+      <a href="#">Midlines</a>
+      <a href="#">Peripheral IV</a>
+      <a href="#">Request Service</a>
+    </div>
+
+    <!-- COLUMN 3: COMPANY -->
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+      <a href="#">FAQs</a>
+    </div>
+
+    <!-- COLUMN 4: LEGAL / POLICIES -->
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">HIPAA Compliance</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 StatLine. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+.footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 50px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* COLUMNS */
+.footer-col h4 {
+  font-size: 14px;
+  color: #111;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-col a {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover {
+  color: #000;
+}
+
+/* LOGO COLUMN */
+.footer-logo img {
+  height: 36px;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  font-size: 13px;
+  color: #666;
+  max-width: 220px;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: left;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    text-align: left;
+  }
+}
+</style>
+</html>
